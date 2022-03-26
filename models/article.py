@@ -79,7 +79,7 @@ class Article:
                         except ValueError:
                             self.author = [item.text for item in soup.find_all('a', class_=re.compile('byline__name'))]
                             if not self.author:
-                                raise ValueError("Byline does not match any known pattern.")
+                                raise ValueError("Byline does not match any known pattern. URL:" + self.url)
 
 
         # self.date
