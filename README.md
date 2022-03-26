@@ -4,15 +4,15 @@
 
 ![screenshot of ElephantSQL query](screen_DB.png)
 
-### Why?P
+### Why??
 
-I read the New Yorker religiously and was always dissatisfied with the  Saved Articles section's inability to let me better query what I've read by tag, author, or rubric. So I wrote this little app to parse the HTML of articles I've read for key metadata and save these into an SQL database.
+I read the New Yorker religiously and was always dissatisfied with the  Saved Articles section's inability to let me better query what I've read by tag, author, or rubric. So I wrote this little app to parse the HTML of articles I've read for key metadata and save these into a SQL database.
 
 ### How?
 
 Clone this repo to your local disk.
 
-Set up an empty, ideally web-hosted PostgreSQL database. There are many options but I'm using ElephantSQL's free tier for now. Copy your database's URI into the `.env` file in the root or enter it when prompted upon launching the app.
+Set up an empty, ideally web-hosted PostgreSQL database. There are many options but I'm using [ElephantSQL](https://www.elephantsql.com/)'s free tier for now. Copy your database's URI into the `.env` file in the root or enter it when prompted upon launching the app.
 
 ```
 DATABASE_URI=[INSERT URI]
@@ -34,11 +34,11 @@ python app.py
 
 In the menu, choose whether you want to (1) add the metadata to your database for a single article, (2) for multiple articles via the absolute path to a CSV of article URLs (no headers), or (3) list all articles currently in your database.
 
-![screenshot of ElephantSQL query](screen_menu.png)
+![screenshot of menu](screen_menu.png)
 
 For (2) a progress bar is displayed.
 
-![screenshot of ElephantSQL query](screen_progress.png)
+![screenshot of progress bar](screen_progress.png)
 
 ### Known Issues/To-Dos
 
@@ -48,4 +48,4 @@ For (2) a progress bar is displayed.
 
 ### Acknowledgements
 
-A big thank you goes to Teclado's excellent [Complete Python/PostgreSQL Course 2.0](https://www.udemy.com/course/complete-python-postgresql-database-course/) on Udemy for inspiring a significant chunk of the code base.
+Check out Teclado's excellent [Complete Python/PostgreSQL Course 2.0](https://www.udemy.com/course/complete-python-postgresql-database-course/) on Udemy which inspired a significant chunk of the code base.
